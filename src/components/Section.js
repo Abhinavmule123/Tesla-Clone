@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
-import ModelS from "./images/model-s.jpg"
 function Section({title,description,leftBtnText,rightBtnText,backgroundImg}) {
    
-    return ( 
+    return (
         <Wrap bgImg={backgroundImg}>
             <Fade bottom>
             <ItemText>
