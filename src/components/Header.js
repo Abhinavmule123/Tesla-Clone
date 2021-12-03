@@ -8,7 +8,7 @@ function Header() {
     return (
        <Container>
            <a>
-               <img src="/images/logo.svg" alt="logo" />
+               <img src={process.env.PUBLIC_URL+"/images/logo.svg"} alt="logo" />
            </a>
            <Menu>
                <a href="#">Model S</a>
@@ -50,6 +50,7 @@ export default Header
 const Container = styled.div`
     min-height:60px;
     position:fixed;
+    background-color:rgba(255,255,255,0.5);
     display:flex;
     align-items:center;
     justify-content:space-between;
